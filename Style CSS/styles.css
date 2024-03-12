@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+:root {
+    --cor_primaria: #1a1a1a;
+    --cor_secundaria: #f6f6f6;
+    --cor_terciaria: #fdf038;
+    --cor_quaternaria: #fdc838;
+    --cor_botoes_selection: #bb9900;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.HEADER_CONFIG {
+    display: flex;
+    align-items:center ;
+    justify-content: flex-start;
+}
+
+.img_sobre_nos_header {
+    margin: 20px;
+    padding: 10px;;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor_primaria);
+    color: var(--cor_secundaria);
+}
+a {
+    color: var(--cor_secundaria);
+}
+
+.strong-title {
+    color: var(--cor_terciaria);
+}
+
+.apresentacao {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+
+
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 1.87rem;
+    font-family: "Julius Sans One", sans-serif;
+    text-align: center;
+    margin: 30px;
+}
+
+.apresentacao__conteudo__paragrafo {
+    font-size: 1rem;
+    font-family: "Tinos", serif;
+    margin: 20px;
+    padding: 20px 5px;
+    border-radius: 8px ;
+    text-align: center;
+    border-style: solid;
+    border-color: var(--cor_quaternaria);
+}
+
+.imagem__home {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    max-width: 100%;
+    margin: 15px;
+}
+
+.botoes__de__interacao {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    background-color:  var(--cor_terciaria);
+    font-size: 0.93rem;
+    font-family: "Julius Sans One", sans-serif;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px 20px;
+    text-decoration: none;
+    margin: 2px;
+    color:black;
+    
+}
+
+.botoes_nav {
+    display: flex;
+    justify-content: center;
+
+}
+
+.botoes__de__interacao:hover {
+    background-color: var(--cor_botoes_selection);
+}
+
+.botoes__home {
+    
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+}
+
+.Logo_Topo_Pai {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 0px;
+
+}
+
+.rodape {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor_terciaria);
+    padding: 15px;
+    color: black;
+    font-size: 0.93rem;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+.paragrafo_aba_sobre_nos {
+    display: Flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;;
+    font-family: "Tinos", serif;
+    border-color: var(--cor_terciaria);
+    border-radius: 5px;
+    border-style: outset;
+    width: 40%;
+}
+
+.conteudo_sobre_nos {
+    display: flex;
+    justify-content: center;
+    padding: 10px 120px;
+    align-items: center;
+    gap: 30px;
+    border-color: var(--cor_terciaria);
+    margin: 20px;
+    width: 80%;
+}
+  
+@media (max-width: 1100px) {
+
+    .conteudo_sobre_nos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 10px;
+        align-items: center;
+        gap: 30px;
+        border-color: var(--cor_terciaria);
+        padding: 0% 0%;
+        width: 80%;
+    }
+    .HEADER_CONFIG {
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .conteudo_sobre_nos {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-color: var(--cor_terciaria);
+        padding: 5px 8%;
+    }
+
+    .botoes__de__interacao {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        background-color:  var(--cor_terciaria);
+        font-size: 0.93rem;
+        font-family: "Julius Sans One", sans-serif;
+        text-align: center;
+        border-radius: 8px;
+        padding: 10px 120px;
+        text-decoration: none;
+        margin: 2px;
+        color:black;
+    }
+
+    .botoes_nav {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .paragrafo_aba_sobre_nos {
+        display: Flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 20px;
+        font-size: 1rem;;
+        font-family: "Tinos", serif;
+        border-color: var(--cor_terciaria);
+        border-radius: 5px;
+        border-style: outset;
+        width: 60%;
+
+    .rodape {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--cor_terciaria);
+        padding: 15px;
+        color: black;
+        font-size: 0.93rem;
+        font-family: "Julius Sans One", sans-serif;
+    }
+}
+}
